@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="10dp">
+
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:contentPadding="16dp"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:strokeColor="@color/black"
+        card_view:strokeWidth="2dp"
+        card_view:cardBackgroundColor="#A6A5A5"
+
+
+        >
+        <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+    </com.google.android.material.card.MaterialCardView>
+    <TextView
+        android:id="@+id/noItemView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="No resident here!"
+        android:textSize="20sp"
+        android:visibility="gone"
+        >
+
+    </TextView>
+
+
+
+
+</LinearLayout>
